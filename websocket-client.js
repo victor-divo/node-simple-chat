@@ -1,4 +1,4 @@
-const WS = new WebSocket("ws://myschat.netlify.app:3133");
+const WS = new WebSocket("ws://myschat.netlify.app:8080/");
 WS.binaryType = "blob";
 let color;
 

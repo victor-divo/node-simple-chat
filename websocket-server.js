@@ -8,5 +8,5 @@ WSS.on("connection", (ws) => {
     });
   });
 
-  console.log("It was connected bruh");
+  ws.on("close", () => console.log("Client disconnected"));
 });

@@ -1,4 +1,5 @@
-const WS = new WebSocket("ws://myschat.netlify.app:8080/");
+const HOST = location.origin.replace("/^http/", "ws");
+const WS = new WebSocket(HOST);
 WS.binaryType = "blob";
 let color;
 
